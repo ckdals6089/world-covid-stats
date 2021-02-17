@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>World Covid 19 Stats</title>
     <link
       href="https://fonts.googleapis.com/css?family=Exo+2&display=swap"
       rel="stylesheet"
@@ -10,6 +11,48 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-      
+      <header class="flex">
+        <h1>Covid 19 Stats table</h1>
+      </header>
+      <main class="flex">
+        <div class="letf-panel">
+          <div class="total-board">
+            <p>total Confirmed</p>
+            <span class="confirmed-total"></span>
+          </div>
+        </div>
+        <div class="country-ranks">
+          <p>Confirmed Cases by Country</p>
+          <ol class="rank-list"></ol>
+        </div>
+        <p class="last-updated-time flex justify-center align-center"></p>
+      </div>
+      <div class="right-panel">
+        <div class="summary-wrapper flex">
+          <div class="deaths-container">
+            <h3 class="summary-title">Total Deaths</h3>
+            <p class="total deaths">0</p>
+            <div class="list-wrapper">
+              <ol class="deaths-list"></ol>
+            </div>
+          </div>
+          <div class="recovered-container">
+            <h3 class="summary-title">Total Recovered</h3>
+            <p class="total recovered">0</p>
+            <div class="list-wrapper">
+              <ol class="recovered-list"></ol>
+            </div>
+          </div>
+        </div>
+        <div class="chart-container">
+          <canvas
+            id="lineChart"
+            class="corona-chart"
+            style="width: 100%; height: 356px; background-color: #5b5656;"
+          ></canvas>
+        </div>
+      </div>
+      </main>
+      <script src="./build/app.js"></script>
   </body>
 </html>
