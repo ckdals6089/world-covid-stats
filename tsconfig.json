@@ -1,9 +1,12 @@
 {
-      "compilerOptions": {
-          "allowJs": true,
-          "target": "ES5",
-          "outDir": "./build",
-          "moduleResolution": "Node"
-      },
-      "include": ["./src/**/*"]
-  }
+    "compilerOptions": {
+        "allowJs": true,
+        "target": "ES5",
+        "outDir": "./dist",
+        "moduleResolution": "Node",
+        "lib":["ES2015","DOM","DOM.Iterable"],
+        "typeRoots": ["./node_modules/@types","./types"],
+        "strict": true
+    },
+    "include": ["./src/**/*"]
+}
